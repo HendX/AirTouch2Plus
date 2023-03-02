@@ -39,8 +39,6 @@ let connection = AirTouch2PlusConnection() { connection, state in
     default:
         // break
     }
-}
-    
 } packetReceivedHandler: { connection, packet in
 
     // Packet is received with the raw packet data. Use `airTouch2PlusPacket` to make it more usful
