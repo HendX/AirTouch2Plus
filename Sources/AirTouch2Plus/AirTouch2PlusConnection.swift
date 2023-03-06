@@ -6,6 +6,8 @@ import Foundation
 import Network
 
 public class AirTouch2PlusConnection {
+    public static let standardPort: NWEndpoint.Port = .init(integerLiteral: 9200)
+    
     public static let applicationServiceParameters: NWParameters = {
         let parameters = NWParameters.tcp
 
@@ -38,13 +40,13 @@ public class AirTouch2PlusConnection {
 }
 
 extension AirTouch2PlusConnection {
-    public func send(message: Packet, completion: @escaping (Swift.Error?) -> Void) {
+    public func send(packet: Packet, completion: @escaping (Swift.Error?) -> Void) {
         guard let connection else {
             return
         }
 
-        let data = Data(message.bytes)
-        print("Sending: \(message) (\(data))")
+        let data = Data(packet.bytes)
+        print("Sending: \(packet) (\(data))")
 
         connection.send(
             content: data,

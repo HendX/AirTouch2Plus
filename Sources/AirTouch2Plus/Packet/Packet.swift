@@ -129,40 +129,20 @@ extension Packet {
 }
 
 extension Packet {
-    public static func request(messageID: MessageID?, _ packet: StandardPacket) -> Self {
+    public static func request(messageID: MessageID?, _ packet: AirTouch2PlusPacket) -> Self {
         .init(
-            address: Packet.standardMessageRequestAddress,
+            address: packet is StandardPacket ? Packet.standardMessageRequestAddress : Packet.extendedMessageRequestAddress,
             messageID: messageID,
-            messageType: Packet.standardMessageType,
+            messageType: packet is StandardPacket ? Packet.standardMessageType : Packet.extendedMessageType,
             data: packet.bytes
         )
     }
 
-    public static func response(messageID: MessageID?, _ packet: StandardPacket) -> Self {
+    public static func response(messageID: MessageID?, _ packet: AirTouch2PlusPacket) -> Self {
         .init(
-            address: Packet.standardMessageResponseAddress,
+            address: packet is StandardPacket ? Packet.standardMessageResponseAddress : Packet.extendedMessageResponseAddress,
             messageID: messageID,
-            messageType: Packet.standardMessageType,
-            data: packet.bytes
-        )
-    }
-}
-
-extension Packet {
-    public static func request(messageID: MessageID?, _ packet: ExtendedPacket) -> Self {
-        .init(
-            address: Packet.extendedMessageRequestAddress,
-            messageID: messageID,
-            messageType: Packet.extendedMessageType,
-            data: packet.bytes
-        )
-    }
-
-    public static func response(messageID: MessageID?, _ packet: ExtendedPacket) -> Self {
-        .init(
-            address: Packet.extendedMessageResponseAddress,
-            messageID: messageID,
-            messageType: Packet.extendedMessageType,
+            messageType: packet is StandardPacket ? Packet.standardMessageType : Packet.extendedMessageType,
             data: packet.bytes
         )
     }
