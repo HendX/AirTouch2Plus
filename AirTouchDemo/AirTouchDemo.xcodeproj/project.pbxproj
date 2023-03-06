@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6627C45629B6AC5800379B45 /* AirTouchDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C45529B6AC5800379B45 /* AirTouchDemoApp.swift */; };
+		6627C45829B6AC5800379B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C45729B6AC5800379B45 /* ContentView.swift */; };
+		6627C45A29B6AC5800379B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6627C45929B6AC5800379B45 /* Assets.xcassets */; };
+		6627C45D29B6AC5800379B45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6627C45C29B6AC5800379B45 /* Preview Assets.xcassets */; };
+		6627C46629B6AD0A00379B45 /* AirTouch2PlusClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C46529B6AD0A00379B45 /* AirTouch2PlusClient.swift */; };
+		6627C46A29B6AD4100379B45 /* AirTouch2Plus in Frameworks */ = {isa = PBXBuildFile; productRef = 6627C46929B6AD4100379B45 /* AirTouch2Plus */; };
+		6627C47229B6AD7500379B45 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C47129B6AD7500379B45 /* main.swift */; };
+		6627C47729B6AD8800379B45 /* AirTouch2PlusMockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C47629B6AD8800379B45 /* AirTouch2PlusMockServer.swift */; };
+		6627C47929B6AD9900379B45 /* AirTouch2Plus in Frameworks */ = {isa = PBXBuildFile; productRef = 6627C47829B6AD9900379B45 /* AirTouch2Plus */; };
+		6627C47B29B6AE2D00379B45 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C47A29B6AE2D00379B45 /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6627C46D29B6AD7500379B45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6627C45229B6AC5700379B45 /* AirTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6627C45529B6AC5800379B45 /* AirTouchDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTouchDemoApp.swift; sourceTree = "<group>"; };
+		6627C45729B6AC5800379B45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6627C45929B6AC5800379B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6627C45C29B6AC5800379B45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6627C46429B6AC8000379B45 /* AirTouch2Plus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AirTouch2Plus; path = ..; sourceTree = "<group>"; };
+		6627C46529B6AD0A00379B45 /* AirTouch2PlusClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTouch2PlusClient.swift; sourceTree = "<group>"; };
+		6627C46F29B6AD7500379B45 /* AirTouchMockServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AirTouchMockServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		6627C47129B6AD7500379B45 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6627C47629B6AD8800379B45 /* AirTouch2PlusMockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTouch2PlusMockServer.swift; sourceTree = "<group>"; };
+		6627C47A29B6AE2D00379B45 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6627C44F29B6AC5700379B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627C46A29B6AD4100379B45 /* AirTouch2Plus in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6627C46C29B6AD7500379B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627C47929B6AD9900379B45 /* AirTouch2Plus in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6627C44929B6AC5700379B45 = {
+			isa = PBXGroup;
+			children = (
+				6627C46329B6AC8000379B45 /* Packages */,
+				6627C45429B6AC5700379B45 /* AirTouchDemo */,
+				6627C47029B6AD7500379B45 /* AirTouchMockServer */,
+				6627C45329B6AC5700379B45 /* Products */,
+				6627C46829B6AD4100379B45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6627C45329B6AC5700379B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6627C45229B6AC5700379B45 /* AirTouchDemo.app */,
+				6627C46F29B6AD7500379B45 /* AirTouchMockServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6627C45429B6AC5700379B45 /* AirTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6627C46729B6AD1300379B45 /* Classes */,
+				6627C45929B6AC5800379B45 /* Assets.xcassets */,
+				6627C45B29B6AC5800379B45 /* Preview Content */,
+			);
+			path = AirTouchDemo;
+			sourceTree = "<group>";
+		};
+		6627C45B29B6AC5800379B45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6627C45C29B6AC5800379B45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6627C46329B6AC8000379B45 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6627C46429B6AC8000379B45 /* AirTouch2Plus */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		6627C46729B6AD1300379B45 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6627C46529B6AD0A00379B45 /* AirTouch2PlusClient.swift */,
+				6627C45529B6AC5800379B45 /* AirTouchDemoApp.swift */,
+				6627C47A29B6AE2D00379B45 /* AppModel.swift */,
+				6627C45729B6AC5800379B45 /* ContentView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6627C46829B6AD4100379B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6627C47029B6AD7500379B45 /* AirTouchMockServer */ = {
+			isa = PBXGroup;
+			children = (
+				6627C47129B6AD7500379B45 /* main.swift */,
+				6627C47629B6AD8800379B45 /* AirTouch2PlusMockServer.swift */,
+			);
+			path = AirTouchMockServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6627C45129B6AC5700379B45 /* AirTouchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6627C46029B6AC5800379B45 /* Build configuration list for PBXNativeTarget "AirTouchDemo" */;
+			buildPhases = (
+				6627C44E29B6AC5700379B45 /* Sources */,
+				6627C44F29B6AC5700379B45 /* Frameworks */,
+				6627C45029B6AC5700379B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTouchDemo;
+			packageProductDependencies = (
+				6627C46929B6AD4100379B45 /* AirTouch2Plus */,
+			);
+			productName = AirTouchDemo;
+			productReference = 6627C45229B6AC5700379B45 /* AirTouchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6627C46E29B6AD7500379B45 /* AirTouchMockServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6627C47329B6AD7500379B45 /* Build configuration list for PBXNativeTarget "AirTouchMockServer" */;
+			buildPhases = (
+				6627C46B29B6AD7500379B45 /* Sources */,
+				6627C46C29B6AD7500379B45 /* Frameworks */,
+				6627C46D29B6AD7500379B45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTouchMockServer;
+			packageProductDependencies = (
+				6627C47829B6AD9900379B45 /* AirTouch2Plus */,
+			);
+			productName = AirTouchMockServer;
+			productReference = 6627C46F29B6AD7500379B45 /* AirTouchMockServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6627C44A29B6AC5700379B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6627C45129B6AC5700379B45 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6627C46E29B6AD7500379B45 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 6627C44D29B6AC5700379B45 /* Build configuration list for PBXProject "AirTouchDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6627C44929B6AC5700379B45;
+			productRefGroup = 6627C45329B6AC5700379B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6627C45129B6AC5700379B45 /* AirTouchDemo */,
+				6627C46E29B6AD7500379B45 /* AirTouchMockServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6627C45029B6AC5700379B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627C45D29B6AC5800379B45 /* Preview Assets.xcassets in Resources */,
+				6627C45A29B6AC5800379B45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6627C44E29B6AC5700379B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627C45829B6AC5800379B45 /* ContentView.swift in Sources */,
+				6627C45629B6AC5800379B45 /* AirTouchDemoApp.swift in Sources */,
+				6627C46629B6AD0A00379B45 /* AirTouch2PlusClient.swift in Sources */,
+				6627C47B29B6AE2D00379B45 /* AppModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6627C46B29B6AD7500379B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627C47729B6AD8800379B45 /* AirTouch2PlusMockServer.swift in Sources */,
+				6627C47229B6AD7500379B45 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6627C45E29B6AC5800379B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6627C45F29B6AC5800379B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6627C46129B6AC5800379B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirTouchDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirTouchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6627C46229B6AC5800379B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirTouchDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AirTouchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6627C47429B6AD7500379B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6627C47529B6AD7500379B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6627C44D29B6AC5700379B45 /* Build configuration list for PBXProject "AirTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6627C45E29B6AC5800379B45 /* Debug */,
+				6627C45F29B6AC5800379B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6627C46029B6AC5800379B45 /* Build configuration list for PBXNativeTarget "AirTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6627C46129B6AC5800379B45 /* Debug */,
+				6627C46229B6AC5800379B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6627C47329B6AD7500379B45 /* Build configuration list for PBXNativeTarget "AirTouchMockServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6627C47429B6AD7500379B45 /* Debug */,
+				6627C47529B6AD7500379B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6627C46929B6AD4100379B45 /* AirTouch2Plus */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AirTouch2Plus;
+		};
+		6627C47829B6AD9900379B45 /* AirTouch2Plus */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AirTouch2Plus;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6627C44A29B6AC5700379B45 /* Project object */;
+}
