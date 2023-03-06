@@ -19,7 +19,7 @@ import AirTouch2Plus
 // Set the endpoint to your AirTouch 2+ unit
 let endpoint: NWEndpoint = .hostPort(
     host: .init("192.168.0.123"),
-    port: .init(integerLiteral: 9200)
+    port: AirTouch2PlusConnection.standardPort
 ) 
 
 // Create the connection and packet handlers
@@ -60,3 +60,16 @@ let connection = AirTouch2PlusConnection() { connection, state in
 // Initiate the connection to the AirTouch 2+ unit
 connection.connect(endpoint: endpoint)
 ```
+
+## Demo Project
+
+This repository contains a demo project with two targets:
+
+* A sample SwiftUI client app.
+* A mock AirTouch 2+ unit
+
+Run the AirTouchMockServer target to start the fake unit. This will wait for connections and respond to queries from the client.
+
+Next, run the client app in the iOS simulator and tap "Connect" (this will connect to "localhost" by default).
+
+You can then issue commands and receive responses accordingly.
