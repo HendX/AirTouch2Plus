@@ -12,7 +12,10 @@ public class AirTouch2PlusMockServer {
 
     var listener: NWListener?
 
+    let systemState: SystemState
+
     public init() {
+        systemState = .init()
     }
 
     public func startListening(port: NWEndpoint.Port) throws {
@@ -60,28 +63,43 @@ public class AirTouch2PlusMockServer {
 
 
         switch packet.airTouch2PlusPacket {
-        case let p as ErrorRequestMessage:
-            switch p {
+        case let m as ErrorRequestMessage:
+            switch m {
             case .specific(let unitID):
                 message = ErrorResponseMessage(unitID: unitID, error: "TODO") // TODO:
             }
 
-        case let p as GroupControlMessage:
+        case let m as GroupControlMessage:
             message = GroupStatusMessage(groups: [])
 
-        case let p as GroupNameRequestMessage:
-            message = GroupNameResponseMessage(groups: [])
+        case let m as GroupNameRequestMessage:
+            var groups: [GroupNameResponseMessage.Group] = []
 
-        case let p as GroupStatusMessage:
+            switch m {
+            case .all:
+                for groupID: GroupID in 0 ..< 16 {
+                    groups.append(
+                        .init(groupID: groupID, name: systemState.groupName(id: groupID))
+                    )
+                }
+            case .specific(let groupID):
+                groups.append(
+                    .init(groupID: groupID, name: systemState.groupName(id: groupID))
+                )
+            }
+
+            message = GroupNameResponseMessage(groups: groups)
+
+        case let m as GroupStatusMessage:
             message = GroupStatusMessage(groups: [])
 
-        case let p as UnitAbilitiesRequestMessage:
+        case let m as UnitAbilitiesRequestMessage:
             message = UnitAbilitiesResponseMessage(units: [])
 
-        case let p as UnitControlMessage:
+        case let m as UnitControlMessage:
             message = UnitStatusMessage(units: [])
 
-        case let p as UnitStatusMessage:
+        case let m as UnitStatusMessage:
             message = UnitStatusMessage(units: [])
 
         case .none:

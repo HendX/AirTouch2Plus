@@ -10,6 +10,24 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            VStack {
+                Text("Groups")
+                    .font(.headline)
+
+                if model.groups.count == 0 {
+                    Text("Unknown")
+                }
+                else {
+                    VStack(alignment: .leading) {
+                        ForEach(model.groups, id: \.self) { group in
+                            Text("\(group.groupID). \(group.name)")
+                        }
+                    }
+                }
+            }
+
+            Spacer()
+
             if let state = model.state {
                 switch state {
                 case .setup:
@@ -23,6 +41,20 @@ struct ContentView: View {
                     Spacer()
 
                     VStack(spacing: 10) {
+                        Button {
+                            let message = GroupNameRequestMessage.all
+                            let packet = Packet.request(messageID: nil, message)
+
+                            self.model.client.connection?.send(packet: packet) { error in
+                                if let error {
+                                    print("Error: \(error)")
+                                }
+                            }
+
+                        } label: {
+                            Text("Group Names")
+                        }
+
                         Button {
                             let message = GroupStatusMessage(groups: [])
                             let packet = Packet.request(messageID: nil, message)

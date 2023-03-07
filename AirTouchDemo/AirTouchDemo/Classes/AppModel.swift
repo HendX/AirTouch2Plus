@@ -10,6 +10,7 @@ class AppModel: ObservableObject {
     var client: AirTouch2PlusClient
 
     @Published var state: NWConnection.State?
+    @Published var groups: [GroupNameResponseMessage.Group] = []
 
     init() {
         self.client = .init()
@@ -24,19 +25,19 @@ class AppModel: ObservableObject {
             print("Received packet: \(packet)\n")
 
             switch packet.airTouch2PlusPacket {
-            case let p as ErrorResponseMessage:
+            case let m as ErrorResponseMessage:
                 print("ErrorResponseMessage")
 
-            case let p as GroupNameResponseMessage:
-                print("GroupNameResponseMessage")
+            case let m as GroupNameResponseMessage:
+                self.groups = m.groups
 
-            case let p as GroupStatusMessage:
+            case let m as GroupStatusMessage:
                 print("GroupStatusMessage")
 
-            case let p as UnitAbilitiesResponseMessage:
+            case let m as UnitAbilitiesResponseMessage:
                 print("UnitAbilitiesResponseMessage")
 
-            case let p as UnitStatusMessage:
+            case let m as UnitStatusMessage:
                 print("UnitStatusMessage")
 
             case .none:
