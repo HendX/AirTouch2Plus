@@ -94,13 +94,22 @@ public class AirTouch2PlusMockServer {
             message = GroupStatusMessage(groups: [])
 
         case let m as UnitAbilitiesRequestMessage:
-            message = UnitAbilitiesResponseMessage(units: [])
+            switch m {
+            case .all:
+                message = UnitAbilitiesResponseMessage(units: systemState.sortedUnitAbilities)
+            case .specific(let unitID):
+                message = UnitAbilitiesResponseMessage(units: [ systemState.unitAbilities[unitID] ].compactMap { $0 })
+            }
 
         case let m as UnitControlMessage:
-            message = UnitStatusMessage(units: [])
+            message = UnitStatusMessage(
+                units: systemState.sortedUnitStatuses
+            )
 
         case let m as UnitStatusMessage:
-            message = UnitStatusMessage(units: [])
+            message = UnitStatusMessage(
+                units: systemState.sortedUnitStatuses
+            )
 
         case .none:
             break
